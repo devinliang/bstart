@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My Web Homepage</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="vendor/animate.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+
+    
+
+<!-- 影片背景區塊 -->
+<header>
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="video/170724_15_Setangibeach.mp4" type="video/mp4">
+  </video>
+  <div class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white">
+        <h1 class="display-3">Video Header</h1>
+        <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- 主選單 -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light ">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+        <h1 class="animated fadeInRight">Hello World!</h1>
+        <p class="animated fadeInUp delay-1s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vel dolores perspiciatis iusto possimus quos quam minima doloremque? Incidunt ea voluptatum fugiat obcaecati facere? Sequi dicta impedit explicabo vitae cupiditate.</p>
+
+        <a data-fancybox="gallery" href="https://picsum.photos/id/125/1024/768">
+            <img src="https://picsum.photos/id/125/200/300" alt="" class="img-fluid img-thumbnail rounded-circle">
+        </a>
+
+        <a data-fancybox="gallery" href="https://picsum.photos/id/135/1024/768">
+            <img src="https://picsum.photos/id/135/200/300" alt="" class="img-fluid img-thumbnail rounded-circle">
+        </a>
+
+        <div style="height:1080px;"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati porro amet ut minima repellendus facilis? Sed, autem excepturi. Minima quos amet nemo quam atque molestiae adipisci cupiditate aliquam doloremque officia.</p>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="vendor/jquery-3.4.1.min.js"></script>
+        <script src="vendor/fancybox/jquery.fancybox.min.js"></script>
+        <script src="vendor/popper.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script>
+         (function ($) {
+  $(document).ready(function(){
+
+    // hide .navbar first
+    $(".navbar").hide();
+
+    // fade in .navbar
+    $(function () {
+        $(window).scroll(function () {
+
+                 // set distance user needs to scroll before we start fadeIn
+            if ($(this).scrollTop() > 100) {
+                $('.navbar').fadeIn();
+            } else {
+                $('.navbar').fadeOut();
+            }
+        });
+    });
+
+});
+  }(jQuery));
+        </script>
+        
+    </body>
+</html>
